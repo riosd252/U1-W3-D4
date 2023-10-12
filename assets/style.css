@@ -1,0 +1,47 @@
+body {
+  font-family: "Bangers", sans-serif;
+  color: rgb(47, 105, 83);
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#cells-container {
+  background-color: rgba(32, 179, 172, 0.651);
+  border-radius: 0.7rem;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.number-cell {
+  display: inline-block;
+  border: 1px;
+  border-radius: 0.3rem;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.7rem;
+  background-color: rgba(5, 241, 210, 0.39);
+}
+
+h3 {
+  width: max-content;
+  margin-inline: auto;
+  margin-block: inherit;
+}
+
+#button-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#trigger-button {
+  font-family: "Bangers", sans-serif;
+  color: rgb(30, 77, 59);
+  letter-spacing: 2px;
+  border: transparent;
+  padding: 1.8rem;
+  border-radius: 0.7rem;
+  background-color: rgba(34, 105, 105, 0.658);
+}
