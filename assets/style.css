@@ -37,6 +37,7 @@ h3 {
 }
 
 #trigger-button {
+  cursor: pointer;
   font-family: "Bangers", sans-serif;
   color: rgb(30, 77, 59);
   letter-spacing: 2px;
@@ -44,4 +45,13 @@ h3 {
   padding: 1.8rem;
   border-radius: 0.7rem;
   background-color: rgba(34, 105, 105, 0.658);
+}
+
+#trigger-button:hover {
+  background-color: rgba(5, 241, 210, 0.39);
+  transition-duration: 400ms;
+}
+
+.already-retrieved {
+  background-color: antiquewhite;
 }

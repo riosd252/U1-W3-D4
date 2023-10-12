@@ -13,11 +13,28 @@ window.onload = () => {
   }
 };
 
+const triggeredAction = function () {
+  const randGenerated = Math.ceil(Math.random() * 76);
+
+  /*const allCells = document.getElementsByTagName("h3");
+  const allCellsArr = Array.from(allCells);
+
+  for (let i = 0; i < allCellsArr.length; i++) {
+    if (parseInt(allCellsArr[i].innerText) === randGenerated) {
+      allCellsArr[i].style.color = "red";
+    }
+  }*/
+  const allh3s = document.getElementsByTagName("h3");
+  const allCells = document.getElementsByClassName("number-cell");
+  const allCellsArr = Array.from(allCells);
+
+  for (let i = 0; i < allCellsArr.length; i++) {
+    if (parseInt(allh3s[i].innerText) === randGenerated) {
+      allCells[i].classList.add("already-retrieved");
+    }
+  }
+};
+
 const triggerBtn = document.getElementById("trigger-button");
 
-triggerBtn.onclick = () => {
-  const tableNumber = document.getElementsByTagName("h3");
-  const tableNumberArr = Array.from(tableNumber);
-
-  randomNumber = Math.floor(Math.random() * 77);
-};
+triggerBtn.onclick = triggeredAction;
